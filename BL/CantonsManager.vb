@@ -8,4 +8,10 @@ Public Class CantonsManager
 
     End Function
 
+    Public Function hola(id As Integer) As DataTable
+        Dim dao As New DAOCanton()
+        Return dao.findCanton(id)
+
+    End Function
+
 End Class
